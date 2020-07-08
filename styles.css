@@ -1,0 +1,121 @@
+body {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #ecebeb;
+}
+
+h1 {
+  font-family: "Coda Caption", sans-serif;
+  color: #941515;
+  margin: 0 auto;
+}
+
+#game-container {
+  background-color: brown;
+  width: 300px;
+  height: 510px;
+  padding-top: 5px;
+  margin: 0 auto;
+  background-image: url("./img/wood2.jpg");
+  border-radius: 4px;
+}
+
+#game-answer {
+  background-color: black;
+  border-radius: 4px;
+  width: 250px;
+  height: 30px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#game-guesses {
+  background-color: black;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  width: 250px;
+  height: 410px;
+  margin: 0 auto;
+}
+
+.guess-turn {
+  width: 250px;
+  height: 30px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.guess-turn:nth-child(1) {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.peg {
+  background-color: grey;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  margin: auto 10px;
+}
+
+.peg-guesses {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.guess-clues {
+  width: 80px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clue-peg {
+  background-color: grey;
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  margin: auto 2px;
+}
+
+#peg-selectors {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.peg-1 {
+  background-color: red;
+}
+
+.peg-2 {
+  background-color: #31c02c;
+}
+.peg-3 {
+  background-color: #ffffff;
+}
+.peg-4 {
+  background-color: #a51fe4;
+}
+.peg-5 {
+  background-color: #ff9100;
+}
+.peg-6 {
+  background-color: #071ef3;
+}
