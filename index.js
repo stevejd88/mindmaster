@@ -15,4 +15,22 @@ window.addEventListener("load", function () {
   }
 });
 
+function dragStart(e) {
+  e.dataTransfer.setData("Text", e.target.title);
+}
+
+function dragging(e) {
+  console.log(`I am dragging`);
+}
+
+function allowDrop(e) {
+  e.preventDefault();
+}
+
+function drop(e) {
+  e.preventDefault();
+  const data = e.dataTransfer.getData("Text");
+  e.target.classList.add(data);
+}
+
 console.log(answersDiv.children.length);

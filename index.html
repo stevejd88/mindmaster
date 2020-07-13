@@ -160,10 +160,26 @@
         <!-- end guess-turn div -->
         <div class="guess-turn">
           <div class="peg-guesses">
-            <div class="peg-div peg"></div>
-            <div class="peg-div peg"></div>
-            <div class="peg-div peg"></div>
-            <div class="peg-div peg"></div>
+            <div
+              class="peg-div peg"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+            ></div>
+            <div
+              class="peg-div peg"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+            ></div>
+            <div
+              class="peg-div peg"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+            ></div>
+            <div
+              class="peg-div peg"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+            ></div>
           </div>
           <div class="guess-clues">
             <div class="clue-peg"></div>
@@ -176,12 +192,48 @@
       </section>
 
       <section id="peg-selectors">
-        <div class="peg-1 peg"></div>
-        <div class="peg-2 peg"></div>
-        <div class="peg-3 peg"></div>
-        <div class="peg-4 peg"></div>
-        <div class="peg-5 peg"></div>
-        <div class="peg-6 peg"></div>
+        <div
+          class="peg-1 peg"
+          ondragstart="dragStart(event)"
+          ondrag="dragging(event)"
+          draggable="true"
+          title="peg-1"
+        ></div>
+        <div
+          class="peg-2 peg"
+          ondragstart="dragStart(event)"
+          ondrag="dragging(event)"
+          draggable="true"
+          title="peg-2"
+        ></div>
+        <div
+          class="peg-3 peg"
+          ondragstart="dragStart(event)"
+          ondrag="dragging(event)"
+          draggable="true"
+          title="peg-3"
+        ></div>
+        <div
+          class="peg-4 peg"
+          ondragstart="dragStart(event)"
+          ondrag="dragging(event)"
+          draggable="true"
+          title="peg-4"
+        ></div>
+        <div
+          class="peg-5 peg"
+          ondragstart="dragStart(event)"
+          ondrag="dragging(event)"
+          draggable="true"
+          title="peg-5"
+        ></div>
+        <div
+          class="peg-6 peg"
+          ondragstart="dragStart(event)"
+          ondrag="dragging(event)"
+          draggable="true"
+          title="peg-6"
+        ></div>
       </section>
     </div>
     <script src="index.js"></script>
